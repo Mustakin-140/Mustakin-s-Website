@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(21, 8, 8);
+    background-color: rgb(64, 39, 39);
     min-height: 100vh;
     margin: 0;
 }
@@ -116,6 +116,8 @@ body{
     height: auto;
     margin: 0 auto;
     display: block;
+    border-radius: 50%;
+    border: 2px dotted rgb(236, 12, 12);
 }
 .hero-left,.hero-right{
     width: 100%;
@@ -150,4 +152,119 @@ body{
         padding: 0;
     }
 
+}
+
+/*resume section*/
+
+.resume-container,
+.certificates-container,
+.skills-container,
+.portfolio-container,
+.contact-container {
+    margin-top: 1rem;
+    padding: 6.5rem 1rem 0 1rem;
+    min-height: 100vh;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+
+.subtitle-container>.subtitle,
+.subtitle-container>.line {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.line {
+    background-color: #333;
+    width: 100px;
+    height: 2px;
+    margin: 0.25rem 0 2rem 0;
+}
+
+.inner-line {
+    background-color: rgb(59 130 246);
+    width: 30px;
+    height: 2px;
+}
+
+.resume-sub-container {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+}
+
+.resume-list {
+    position: relative;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid: 1.25rem;
+    align-items: center;
+    border-left: 1px solid #333;
+}
+
+.resume-duration-container {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    /* justify-content: space-between; */
+}
+
+.round-div {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid #333;
+    background-color: #222;
+    position: absolute;
+    left: -12.5px;
+}
+
+.resume-duration {
+    background-color: black;
+    /* width: 150px; */
+    width: auto;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.resume-company {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding-right: 15px;
+}
+
+.resume-designation {
+    color: grey;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+
+/*skills section*/
+.skills-sub-container{
+    display: grid;
+}
+
+.skills-subtitle{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
 }
